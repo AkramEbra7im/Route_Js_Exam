@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="sideBar" class="d-flex position-fixed">
+        <div class="side-box  d-flex flex-column justify-content-between bg-black p-4">
+            <ul class="menu-list position-relative overflow-hidden list-unstyled">
+                <li class="py-2 position-relative pointer" id="searchLink">Search</li>
+                <li class="py-2 position-relative pointer" id="categotyLink">Categories</li>
+                <li class="py-2 position-relative pointer" id="areaLink">Area</li>
+                <li class="py-2 position-relative pointer" id="ingradientLink">Ingredients</li>
+                <li class="py-2 position-relative pointer" id="contactLink">Contact Us</li>
+            </ul>
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights
+                    <br>
+                    Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="bg-light text-center  d-flex flex-column justify-content-between py-4 px-2 text-black">
+            <img src="images/logo.png" alt="" class="logo">
+            <i class="fa-solid  fa-2x fa-align-justify colse-open-btn"></i>
+            <div class="d-flex flex-column gap-2">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="searchHeader" class="container pt-4 d-none">
+        <div class="row pb-5">
+            <div class="col-md-6">
+                <input type="text" name="" id="nameSearchInput" class=" bg-transparent text-white form-control"
+                    placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="" id="letterSearchInput" maxlength="1"
+                    class="bg-transparent text-white form-control" placeholder="Search By First Letter">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="showMeals" class="container py-4 ">
+
+        <div id="displayMeals" class="row g-4">
+
+        </div>
+    </section>
+
+    <section id="showDetails" class="container py-5 d-none">
+    </section>
+
+    <section id="contactUs" class="d-none">
+        <div class="container">
+            <div class="min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="w-75 text-center ">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                            <div id="vaildationName" class="text-start d-none name alert alert-danger w-100 mt-2">
+                                <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                    class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                Contain only A-Z chars or Space Minimum 3 characters and Maximum 30
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="emailInput" type="text" class="form-control" placeholder="Enter Your Email">
+                            <div id="VaildationEmail" class="text-start d-none name alert alert-danger w-100 mt-2">
+                                Please Enter Vaild Email Like anything@gmail.com
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="phoneInput" type="text" class="form-control"
+                                placeholder="Enter Your Phone Number">
+                            <div id="VaildationPhone" class="text-start d-none name alert alert-danger w-100 mt-2">
+                                Please Enter Vaild Phone Number
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="ageInput" type="number" class="form-control" placeholder="Enter Your Age">
+                            <div id="Vaildationage" class="text-start d-none name alert alert-danger w-100 mt-2">
+                                Please Enter Vaild Age Number
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" id="passInput" class="form-control"
+                                placeholder="Enter your password">
+                            <div id="vaildationPassword" class="d-none alert alert-danger w-100 mt-2">
+                                <div class="char text-start">
+                                    <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                        class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                    Contain Minimum 8 characters and Maximum 20
+                                </div>
+                                <div class="symbol text-start">
+                                    <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                        class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                    Contain at least one symbol
+                                </div>
+                                <div class="number text-start">
+                                    <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                        class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                    Contain At least one Number
+                                </div>
+                                <div class="upCase text-start">
+                                    <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                        class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                    Contain At least one uppercase character
+                                </div>
+                                <div class="loCase text-start">
+                                    <i class="fa-regular fa-circle-check pe-2 text-success d-none"></i><i
+                                        class="fa-regular fa-circle-xmark pe-2 text-danger"></i>
+                                    Contain At least one lowercase character
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="repassInput" type="text" class="form-control" placeholder="Enter Password Again">
+                            <div id="VaildationRePass" class="text-start d-none name alert alert-danger w-100 mt-2">
+                                Please Enter Vaild Password
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="loading" class="d-flex justify-content-center align-items-center position-fixed 
+    top-0 bottom-0 start-0 end-0 bg-black">
+        <!-- <i class="fa-solid fa-spinner fa-5x text-white fa-spin"></i> -->
+        <span class="loader"></span>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
